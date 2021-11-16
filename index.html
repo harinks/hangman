@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" style="background-color: lightyellow;">
+        <h1 class="text-lg-center">Hangman</h1><br>
+        <div class="float-right"><h4>Chances: <span id='mistakes'>0</span> of <span id='maxWrong'></span></h4></div>
+        <div class="text-lg-center">
+            <img id='hangmanPic' src="./image-hangman/0.jpg"><br><br>
+            <h2 class="text-lg-center" style="color: blueviolet;">Guess the Word:</h2>
+            <h3 id="wordSpotlight" style="color: crimson;">The word to be guessed goes here</h3>
+            <div id="keyboard" style="border: solid black; background-color:orchid; color:rgb(2, 8, 10);"></div><br>
+            <button class="btn btn-info" onClick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="hangman.js"></script>
+</body>
+</html> 
